@@ -16,6 +16,7 @@
 		3A773EAA1FA064650098A992 /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A773EA91FA064650098A992 /* DemoTests.swift */; };
 		3A773EB51FA064650098A992 /* DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A773EB41FA064650098A992 /* DemoUITests.swift */; };
 		3A773EC51FA064850098A992 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A773EC41FA064850098A992 /* SecondViewController.m */; };
+		3AA052F91FAB1EB800D9A8F6 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA052F81FAB1EB800D9A8F6 /* CityModel.swift */; };
 		3AFB84431FA31D02006DEF9B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB84421FA31D02006DEF9B /* CustomTableViewCell.swift */; };
 		3AFB84451FA7160F006DEF9B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB84441FA7160F006DEF9B /* Model.swift */; };
 		C0A879F76B77753A9D73BD3F /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D3212B935BC16B6D5DC7A0 /* Pods_Demo.framework */; };
@@ -56,6 +57,7 @@
 		3A773EC21FA064840098A992 /* Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo-Bridging-Header.h"; sourceTree = "<group>"; };
 		3A773EC31FA064850098A992 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		3A773EC41FA064850098A992 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		3AA052F81FAB1EB800D9A8F6 /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
 		3AFB84421FA31D02006DEF9B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		3AFB84441FA7160F006DEF9B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		8A073DE50A635A840B3BC26A /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				3A054C2B1FA1B3DA00E2531D /* ThreeViewController.swift */,
 				3AFB84421FA31D02006DEF9B /* CustomTableViewCell.swift */,
 				3AFB84441FA7160F006DEF9B /* Model.swift */,
+				3AA052F81FAB1EB800D9A8F6 /* CityModel.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				3AFB84451FA7160F006DEF9B /* Model.swift in Sources */,
 				3A773E951FA064650098A992 /* AppDelegate.swift in Sources */,
 				3A054C2C1FA1B3DA00E2531D /* ThreeViewController.swift in Sources */,
+				3AA052F91FAB1EB800D9A8F6 /* CityModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
