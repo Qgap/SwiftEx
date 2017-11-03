@@ -9,12 +9,14 @@
 import UIKit
 import AFNetworking
 import SwiftyJSON
+import ObjectMapper
 
 class ViewController: UIViewController {
 
     var button:UIButton!
     var askText = UITextField.init()
     var resultLabel = UILabel.init()
+    var modelAarry = [CityModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,19 +44,23 @@ class ViewController: UIViewController {
         
         let sessionManager = AFHTTPSessionManager.init(baseURL: URL.init(string: "http://ali-city.showapi.com"))
         let appcode = "5afe0d6397a348558ce8c64f4c93097a"
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
         sessionManager.requestSerializer.setValue(String.init(format: "APPCODE %@", appcode), forHTTPHeaderField: "Authorization")
         sessionManager.get("/areaName", parameters: ["areaName":self.askText.text], progress: nil, success: { (task, response) in
-            let jsonData = JSON(response)
+            UIApplication.shared.isNetworkActivityIndicatorVisible = false
+            let jsonData = JSON(response ?? "response convert false")
             print(jsonData)
             var array = NSArray.init();
             let resultCode:NSInteger = jsonData["showapi_res_code"].intValue
             if resultCode == 0 {
                 array = jsonData["showapi_res_body"]["data"].arrayValue as NSArray
-                print(array)
+                print(array[0])
+           
             }
             
         }) { (task, error) in
-             print(error.localizedDescription)
+            UIApplication.shared.isNetworkActivityIndicatorVisible = false
+            print(error.localizedDescription)
         }
         
         

@@ -13,18 +13,18 @@ import ObjectMapper
 class CityModel: Mappable {
     
     var id:String?
-    var parentId:String
-    var wholeName:String
-    var prePinYin:String
-    var countyId:String
-    var level:NSInteger
-    var pinYin:String
+    var parentId:String?
+    var wholeName:String?
+    var prePinYin:String?
+    var countyId:String?
+    var level:NSInteger?
+    var pinYin:String?
     var remark:String?
     var areaName:String!
     var simplePy:String!
-    var lat:Float
+    var lat:Float?
     var provinceId:String!
-    var simpleName:String
+    var simpleName:String?
     var areaCode:String?
     
     required init?(map: Map) {
