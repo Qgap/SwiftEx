@@ -48,15 +48,13 @@ class ViewController: UIViewController {
         sessionManager.requestSerializer.setValue(String.init(format: "APPCODE %@", appcode), forHTTPHeaderField: "Authorization")
         sessionManager.get("/areaName", parameters: ["areaName":self.askText.text], progress: nil, success: { (task, response) in
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
-            let jsonData = JSON(response ?? "response convert false")
-            print(jsonData)
-            var array = NSArray.init();
-            let resultCode:NSInteger = jsonData["showapi_res_code"].intValue
-            if resultCode == 0 {
-                array = jsonData["showapi_res_body"]["data"].arrayValue as NSArray
-                print(array[0])
-           
+            let json = response as! Dictionary<String, Any>
+            print(json)
+            if json["showapi_res_code"] as! NSInteger == 0 {
+                let dataArray = json["showapi_res_body"]
+                print(dataArray)
             }
+            
             
         }) { (task, error) in
             UIApplication.shared.isNetworkActivityIndicatorVisible = false

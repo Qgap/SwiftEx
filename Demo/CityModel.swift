@@ -26,6 +26,9 @@ class CityModel: Mappable {
     var provinceId:String!
     var simpleName:String?
     var areaCode:String?
+    var cityId:String?
+    var lon:String?
+    var zipCode:String?
     
     required init?(map: Map) {
         
@@ -46,6 +49,9 @@ class CityModel: Mappable {
         provinceId <- map["provinceId"]
         simpleName <- map["simpleName"]
         areaCode <- map["areaCode"]
+        cityId <- map["cityId"]
+        lon <- map["lon"]
+        zipCode <- map["zipCode"]
     }
     
 }
