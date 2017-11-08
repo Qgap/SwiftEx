@@ -41,47 +41,9 @@ class ViewController: UIViewController {
     }
     
     @objc func push() {
-        
-        let sessionManager = AFHTTPSessionManager.init(baseURL: URL.init(string: "http://ali-city.showapi.com"))
-        let appcode = "5afe0d6397a348558ce8c64f4c93097a"
-        UIApplication.shared.isNetworkActivityIndicatorVisible = true
-        sessionManager.requestSerializer.setValue(String.init(format: "APPCODE %@", appcode), forHTTPHeaderField: "Authorization")
-        sessionManager.get("/areaName", parameters: ["areaName":self.askText.text], progress: nil, success: { (task, response) in
-            UIApplication.shared.isNetworkActivityIndicatorVisible = false
-            let json = response as! Dictionary<String, Any>
-            print(json)
-            if json["showapi_res_code"] as! NSInteger == 0 {
-                let dataArray = json["showapi_res_body"]
-                print(dataArray)
-            }
-            
-            
-        }) { (task, error) in
-            UIApplication.shared.isNetworkActivityIndicatorVisible = false
-            print(error.localizedDescription)
-        }
-        
-        
-        
-//        let sessionManager = AFHTTPSessionManager.init(baseURL: URL.init(string:"http://jisuznwd.market.alicloudapi.com/"))
-//        let appcode = "5afe0d6397a348558ce8c64f4c93097a"
-//        sessionManager.requestSerializer.setValue(String.init(format: "APPCODE %@", appcode), forHTTPHeaderField: "Authorization")
-//        sessionManager.get("iqa/query", parameters: ["question":self.askText.text], progress: nil, success: { (task, response) in
-//
-//            let data:String = JSON(response)["msg"].stringValue
-//            if data == "ok" {
-//                self.resultLabel.text = JSON(response)["result"]["content"].stringValue
-//            }
-//
-//            print(data)
-//
-//
-//            print("response+ \(response)")
-//
-//        }) { (task, error) in
-//            print(error.localizedDescription)
-//        }
-        
+        let detailVC = DetailVC()
+        detailVC.searchWord = self.askText.text
+        self.navigationController?.pushViewController(detailVC, animated: true)
         
 //        let vc = ThreeViewController()
 //        self.navigationController?.pushViewController(vc, animated: true)
