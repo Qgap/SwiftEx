@@ -8,4 +8,5 @@ pod 'RealmSwift'
 pod 'AFNetworking'
 pod 'SwiftyJSON'
 pod 'ObjectMapper'
+pod 'XLForm'
 end

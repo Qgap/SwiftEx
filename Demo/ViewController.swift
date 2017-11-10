@@ -40,11 +40,16 @@ class ViewController: UIViewController {
         
     }
     
+
     @objc func push() {
-        let detailVC = DetailVC()
-        detailVC.searchWord = self.askText.text
-        self.navigationController?.pushViewController(detailVC, animated: true)
+        let vc = FormViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+
+//        let detailVC = DetailVC()
+//        detailVC.searchWord = self.askText.text
+//        self.navigationController?.pushViewController(detailVC, animated: true)
         
+// block back value
 //        let vc = ThreeViewController()
 //        self.navigationController?.pushViewController(vc, animated: true)
 //        vc.myBlock = {(name:String) in

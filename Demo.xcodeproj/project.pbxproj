@@ -19,6 +19,7 @@
 		3A773EB51FA064650098A992 /* DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A773EB41FA064650098A992 /* DemoUITests.swift */; };
 		3A773EC51FA064850098A992 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A773EC41FA064850098A992 /* SecondViewController.m */; };
 		3AA052F91FAB1EB800D9A8F6 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA052F81FAB1EB800D9A8F6 /* CityModel.swift */; };
+		3AF961C41FB59FB2007A2EF4 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF961C31FB59FB2007A2EF4 /* FormViewController.swift */; };
 		3AFB84431FA31D02006DEF9B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB84421FA31D02006DEF9B /* CustomTableViewCell.swift */; };
 		3AFB84451FA7160F006DEF9B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB84441FA7160F006DEF9B /* Model.swift */; };
 		C0A879F76B77753A9D73BD3F /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D3212B935BC16B6D5DC7A0 /* Pods_Demo.framework */; };
@@ -62,6 +63,7 @@
 		3A773EC31FA064850098A992 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		3A773EC41FA064850098A992 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		3AA052F81FAB1EB800D9A8F6 /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
+		3AF961C31FB59FB2007A2EF4 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		3AFB84421FA31D02006DEF9B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		3AFB84441FA7160F006DEF9B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		8A073DE50A635A840B3BC26A /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				3AA052F81FAB1EB800D9A8F6 /* CityModel.swift */,
 				3A06CE501FB1815D00C747A7 /* CityCell.swift */,
 				3A06CE521FB188ED00C747A7 /* DetailVC.swift */,
+				3AF961C31FB59FB2007A2EF4 /* FormViewController.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/XLForm/XLForm.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -330,6 +334,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLForm.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -384,6 +389,7 @@
 				3A06CE531FB188ED00C747A7 /* DetailVC.swift in Sources */,
 				3A773E951FA064650098A992 /* AppDelegate.swift in Sources */,
 				3A054C2C1FA1B3DA00E2531D /* ThreeViewController.swift in Sources */,
+				3AF961C41FB59FB2007A2EF4 /* FormViewController.swift in Sources */,
 				3AA052F91FAB1EB800D9A8F6 /* CityModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -553,7 +559,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85369EBNDG;
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gap.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -571,7 +579,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85369EBNDG;
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gap.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -6,6 +6,5 @@
 #define Demo-Bridging-Header_h
 
 #import "SecondViewController.h"
-
 #endif
 
